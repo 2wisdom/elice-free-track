@@ -151,7 +151,7 @@ print(intdiv, modular, expo)
 print("Hello" + "World") #HelloWorld
 print("Hello"*3) #HelloHelloHello
 
-# [실습6] 얼쑤! 자진모르 장단: 문자열연산
+# [실습6] 얼쑤! 자진모리 장단: 문자열연산
 # 변수 connect_str를 선언하고, 연결 연산자를 이용해서 '덩덕쿵덕'를 넣어봅시다.
 connect_str = '덩덕' + '쿵덕'
 
