@@ -363,11 +363,13 @@ start = int(text.split(',')[0])
 end = int(text.split(',')[1])
 
 star = start
-for i in range(end - start + 1) :
+for i in range(end) :
     if start >= end : 
         print('오류')
         break
     print('*' * star)
     star = star + 1
-    if star > 15 :
+    if star > end :
+        break
+    elif star > 15 :
         break
