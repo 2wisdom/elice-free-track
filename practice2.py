@@ -404,3 +404,38 @@ for i in range(end) :
 최솟값과 최댓값이 동일한 경우 해당 구간은 겹치는 구간에 포함됩니다.
 만약 두 구간이 겹치지 않는다면 X를 출력해 주세요.
 """
+min_a = int(input())
+max_a = int(input())
+min_b = int(input())
+max_b = int(input())
+
+# a의 값들과 b의 값들 빼주기
+
+a = min_a
+a_list = []
+while True :
+    a_list.append(a)
+    a = a + 1
+    if a > max_a :
+        break
+
+b = min_b
+b_list = []
+while True :
+    b_list.append(b)
+    b = b + 1
+    if b > max_b :
+        break
+
+# a_list와 b_list의 같은값 빼주기
+
+ab_list = []
+for i in a_list :
+    for j in b_list :
+        if i == j :
+            ab_list.append(i)
+
+if ab_list == [] :
+    print('X')
+else :
+    print(min(ab_list), max(ab_list))
