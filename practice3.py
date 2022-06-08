@@ -126,3 +126,7 @@ code = input().split( ) # 암호문을 문자열의 형태로 입력받습니다
 text = decode(code)
 
 print(text) # 해독된 문자열을 출력합니다.
+
+
+"""
+"""
